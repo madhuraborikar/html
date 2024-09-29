@@ -1,0 +1,44 @@
+<!--
+       QUE.16  WAP to print hello world 10 times in div
+-->
+
+
+    <div id="result"></div>
+    <script>
+    output= ''
+
+    for(i=0;i<=10;i++){
+        output=output+`${i} HELLO WORLD <br>`
+    }
+    console.log(output)
+
+    document.getElementById("result").innerHTML= output
+     </script>
+
+
+
+<!-- 
+    QUE.17 WAP to read number from textbox and print table of that number in div 
+-->
+
+<input type="text" id="num" onkeyup="getTable()">
+<div id="result"></div>
+
+<script>
+
+function getTable() {
+
+    num = document.getElementById("num").value
+    
+    output = ''
+    
+for(i = 1; i <= 10; i++) {
+    output = output + ` ${num} * ${i} = ${num * i} <br>`
+}
+
+console.log(output)
+
+document.getElementById("result").innerHTML = output
+
+}
+</script>

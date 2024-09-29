@@ -1,0 +1,32 @@
+<!--
+    
+    <script>
+    for(i=0;i<10;i++);
+        console.log(i)
+    
+</script>
+
+-->
+<!-- WAP to read Price and print Pricr including GST 
+     Pricr: 100
+    Price including GST: 118-->
+
+<h1>your price:</h1>
+<input type="text" id="price" size="30px" placeholder="Price"><br>
+<button onclick="getPrice()"> to get Price including GST </button>
+<h1 id="result"> PRICE INCLUDING GST </h1>
+
+
+<script>
+
+    function getPrice(){
+        
+        num=Number(document.getElementById("price").value)
+        output = `PRICE INCLUDING GST is ${num+(num*0.18)}`
+        console.log(output)
+        document.getElementById("result").innerHTML= output
+
+    }
+</script>
+
+

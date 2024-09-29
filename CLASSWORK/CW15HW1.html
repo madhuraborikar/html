@@ -1,0 +1,53 @@
+<!--
+    CW15: WAP to read subject of 5 marks and check whether student is passed or failed
+if failed then show result in red color otherwise in blue color
+-->     <!--PREFER CW13,CW14,CW16,CW17-->
+<input type="text" id="ENG" placeholder="ENG = "><br>
+<input type="text" id="MAT" placeholder="MAT = "><br>
+<input type="text" id="SCI" placeholder="SCI = "><br>
+<input type="text" id="MAR" placeholder="MAR = "><br>
+<input type="text" id="HIN" placeholder="HIN = "><br>
+<button onclick="RESULT()"> RESULT </button>
+<h1 id="Total">Total wil appear here</h1>
+<h1 id="result">Percentage wil appear here</h1>
+<input type="text" id="percentage" placeholder="TOTAL PERCENT = " size="30px"><br>
+<button onclick="changecolor()">to see if student is passed or not</button>
+<h1 id="percentage">Actual result wil appear here</h1>
+<div ></div>
+<script>
+    
+    function RESULT(){
+        num1=Number(document.getElementById("ENG").value)
+        num2=Number(document.getElementById("MAT").value)
+        num3=Number(document.getElementById("SCI").value)
+        num4=Number(document.getElementById("MAR").value)
+        num5=Number(document.getElementById("HIN").value)
+        output1 = `Total is ${(num1+num2+num3+num4+num5)}`
+        output2 = `percentage is ${(num1+num2+num3+num4+num5)/5}%`
+        document.getElementById("Total").innerHTML=output1
+        document.getElementById("result").innerHTML=output2
+    }
+    
+        function changecolor(){
+            output=''
+            if(output2 > 35){
+                `yore passed`
+                console.log(`YOU'RE PASSED`)
+              }
+    
+        }
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

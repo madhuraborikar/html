@@ -1,0 +1,17 @@
+    <!--QUE.12 WAP to read 2 numbers using input text and print subtraction in h1 tag-->
+
+    <input type="text" id="num1" >
+    <input type="text" id="num2" >
+    <button onclick="getSub()"> SUBTRACT </button>
+    <h1 id="Result">Subtration will appear here</h1>
+    <script>
+    function getSub(){
+
+        x=Number(document.getElementById("num1").value)
+        y=Number(document.getElementById("num2").value)
+        output = `Subtraction of ${x} and ${y} is ${x-y}`
+
+        document.getElementById("Result").innerHTML = output
+
+    }
+    </script>

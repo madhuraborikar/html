@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<!--
+    <table border="1" aria-setsize="30">
+   
+       <tr>
+         <td colspan="4">
+            <input type="text" id="result">
+         </td>
+       </tr>
+   
+       <tr>
+           <td><button>7</button></td>
+           <td><button>8</button></td>
+           <td><button>9</button></td>
+           <td><button>/</button></td>
+       </tr>
+       <tr>
+           <td><button>4</button></td>
+           <td><button>5</button></td>
+           <td><button>6</button></td>
+           <td><button>*</button></td>
+       </tr>
+       <tr>
+           <td><button>1</button></td>
+           <td><button>2</button></td>
+           <td><button>3</button></td>
+           <td><button>-</button></td>
+       </tr>
+        <tr>
+            <td><button>.</button></td>
+            <td><button>0</button></td>
+            <td><button>=</button></td>
+            <td><button>+</button></td>
+        </tr>
+     
+        
+        
+       
+    
+</table>-->
+
+
+
+<table border="1">
+    <tr>
+        <td colspan="4">
+            <input type="text" id="result">
+        </td>
+    </tr>
+    <tr>
+        <td><button onclick="sendToTextBox('1')">1</button></td>
+        <td><button onclick="sendToTextBox('2')">2</button></td>
+        <td><button onclick="sendToTextBox('3')">3</button></td>
+        <td><button onclick="sendToTextBox('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="sendToTextBox('4')">4</button></td>
+        <td><button onclick="sendToTextBox('5')">5</button></td>
+        <td><button onclick="sendToTextBox('6')">6</button></td>
+        <td><button onclick="sendToTextBox('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="sendToTextBox('7')">7</button></td>
+        <td><button onclick="sendToTextBox('8')">8</button></td>
+        <td><button onclick="sendToTextBox('9')">9</button></td>
+        <td><button onclick="sendToTextBox('*')">*</button></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <button onclick="getCalculation()">=</button>
+        </td>
+    </tr>
+</table>
+<script>
+    function getCalculation() {
+        op = document.getElementById("result").value
+        // alert(eval(op))
+        document.getElementById("result").value = eval(op)
+    }
+
+    function sendToTextBox(num) {
+        op = document.getElementById("result").value
+        op = op + num
+        document.getElementById("result").value = op
+    }
+</script>

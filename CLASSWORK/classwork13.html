@@ -1,0 +1,36 @@
+<!--
+     QUE.13. WAP to read marks of 5 subjects eng, maths, science,hindi,marathi and print total and percentage in h1 tag
+-->
+ 
+
+   <input type="text" id="Eng" >
+   <br>
+   <input type="text" id="Mat" >
+   <br>
+   <input type="text" id="Sci" >
+   <br>
+   <input type="text" id="Hin" >
+   <br>
+   <input type="text" id="Mar" >
+   <br>
+   <button onclick="getPercent()"> Click here to get percentage </button>
+   <h1 id="Total">Total wil appear here</h1>
+   <h1 id="Result">Percentage wil appear here</h1>
+   <br>
+   <script>
+      function getPercent(){
+  
+          num1=Number(document.getElementById("Eng").value)
+          num2=Number(document.getElementById("Mat").value)
+          num3=Number(document.getElementById("Sci").value)
+          num4=Number(document.getElementById("Hin").value)
+          num5=Number(document.getElementById("Mar").value)
+
+          output1 = `Total is ${(num1+num2+num3+num4+num5)}`
+          output2 = `percentage is ${(num1+num2+num3+num4+num5)/5}%`
+          document.getElementById("Total").innerHTML=output1
+          document.getElementById("Result").innerHTML=output2
+
+  
+      }
+      </script>

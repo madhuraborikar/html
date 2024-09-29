@@ -1,0 +1,41 @@
+<!-- 
+    QUE.14. WAP to show 3 buttons RED GREEN BLUE on click of button background color should change 
+    use: document.body.style.backgroundColor = "red"
+-->
+
+
+   <button onclick="RED()"> change in RED </button> <br>
+   <button onclick="GREEN()"> change in GREEN </button> <br>
+   <button onclick="BLUE()"> change in BLUE </button> <br>
+
+    <script>
+      function RED(){
+      document.body.style.backgroundColor = "RED"
+      }
+
+      function GREEN(){
+          document.body.style.backgroundColor = "GREEN"
+        }
+      
+       function BLUE(){
+        document.body.style.backgroundColor = "BLUE"
+        }
+    </script>
+
+
+<!--Alternate option -->
+  
+     <html>
+        <body>
+            <button onclick="changecolor('red')">RED</button>
+            <button onclick="changecolor('green')">GREEN</button>
+            <button onclick="changecolor('blue')">BLUE</button>
+        </body>
+
+        <script>
+            function changecolor(clr){
+                document.body.style.backgroundColor = clr
+
+            }
+        </script>
+     </html>

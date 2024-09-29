@@ -1,0 +1,107 @@
+<script>
+
+/* QUE.1 WAP to print Namaste Bharat in console*/
+   console.log(`NAMASTE BHARAT`)
+
+/*QUE.2 WAP to print namaste bharat in alert popup*/
+   alert("NAMASTE BHARAT")
+
+/* QUE.3 WAP to reat name from user and print*/
+   name = (prompt(`Enter your name`))
+   let n=name.toUpperCase()
+   console.log(`hello ${n}`)
+    
+/*QUE.4 WAP to read radius and print area and circumference of of circle */
+   num=Number(prompt(`Enter radius: `))
+   Math.PI
+   console.log(`Radius is ${num}`)
+   console.log(`Area of circle is ${Math.PI*num*num}`)
+   console.log(`Circumference of circle is ${2*Math.PI*num}`)
+    
+/*QUE.5 WAP to read length and breadth of rectangle and print area and perimeter*/
+   num1=Number(prompt(`Enter length:  `))
+   num2=Number(prompt(`Enter breadth: `))
+   console.log(`Length of rectangle is ${num1}`)
+   console.log(`Breadth of rectangle is ${num2}`) 
+   console.log(`Area of rectangle is ${num1*num2}`)
+   console.log(`Perimeter of rectangle is ${2*(num1+num2)}`) 
+       
+/*QUE.6 WAP to read 3 numbers and print mean/ average*/
+   num1=Number(prompt(`Enter Number1:  `))
+   num2=Number(prompt(`Enter Number2: `))
+   num3=Number(prompt(`Enter Number3: `))
+   console.log(`Number 1 ${num1}`) 
+   console.log(`Number 2 ${num2}`) 
+   console.log(`Number 3 ${num3}`) 
+   console.log(`Average of 3 numbers ${(num1+num2+num3)/3}`) 
+       
+/*QUE.7 WAP to read 3 numbers and print mean/ average*/
+   num1=Number(prompt(`Enter Number1: `))
+   num2=Number(prompt(`Enter Number2: `))
+   let lastdigit1 = num1%10
+   let lastdigit2 = num2%10
+   console.log(`Sum of last digits is ${lastdigit1+lastdigit2} `)
+
+/*QUE.8 WAP to print BHARAT in console in 1 line */
+    /*(use css in console %c) 
+    BH - orange font color
+    AR - white in color and background color blue
+    RT - green in color */
+    
+   console.log("%cBH%cAR%cAT" , "color:orange; font-size:100px " , "color:white; background:blue;font-size:100px " , "color:green;font-size:100px")
+
+/*QUE.9 WAP of swapping of two numbers using third variable*/
+   num1=Number(prompt(`Enter Number1: `))
+   num2=Number(prompt(`Enter Number2: `))
+   console.log(`Before swapping value of number1 is ${num1}`)
+   console.log(`Before swapping value of number2 is ${num2}`)
+   let temp 
+   temp = num1
+   num1 = num2
+   num2 = temp
+   console.log(`After swapping value of number1 is ${num1}`)
+   console.log(`After swapping value of number2 is ${num2}`)
+
+
+              /*and*/
+
+/*QUE.9 WAP of swapping of two numbers using third variable*/
+   num1=Number(prompt(`Enter Number1: `))
+   num2=Number(prompt(`Enter Number2: `))
+   console.log(`Before swapping value of number1 is ${num1}`)
+   console.log(`Before swapping value of number2 is ${num2}`)   
+   num1 = num1+num2
+   num2 = num1-num2
+   num1 = num1-num2
+   console.log(`After swapping value of number1 is ${num1}`)
+   console.log(`After swapping value of number2 is ${num2}`)
+
+
+/*QUE.10 WAP to read 3 digit number and print reverse of it*/
+   num=Number(prompt(`enter 3 digit number`))
+   
+   a = Math.floor(num/100)
+   console.log(a) 
+   b = Math.floor(num/10)%10
+   console.log(b) 
+   c = num % 10
+   console.log(c) 
+   rev = c*100+b*10+a*1 
+   console.log(rev)
+  </script>
+
+
+
+
+
+
+
+
+
+    
+
+   
+
+
+
+

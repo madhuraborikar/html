@@ -1,0 +1,29 @@
+<button onclick="shuffleColor()" > Shuffle Color </button>
+<h1 id="result"></h1>
+<script>
+color = "lavender"
+function shuffleColor(){
+    if(color =="red")
+       color = "green"
+    else if(color =="green")
+       color = "blue"
+    else if(color == "blue")
+       color = "yellow"
+    else if(color=="yellow")
+       color="purple"
+    else if(color=="purple")
+       color="lavender"
+    else if(color=="lavender")
+        color="red"
+    console.log(color)
+    document.getElementById("result").innerHTML = color
+    document.body.style.backgroundColor = color
+}
+setInterval(shuffleColor,250)
+
+</script>
+
+
+
+       
+
