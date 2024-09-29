@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <form>
+        <label for="name">Name:</label>
+        <br>
+        <input type="text" id="name">
+        <br>
+        
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email">
+        <br>
+
+        <label for="phone">Phone:</label>
+        <br>
+        <input type="tel" id="phone">
+        <br>
+
+        <label for="file">Resume:</label>
+        <br>
+        <input type="file" id="file">
+        <br>
+
+        <label for="years">Experience(years)</label>
+        <br>
+        <input type="number" id="years" min="0" max="10">
+        <br>
+
+        <fieldset>
+            <legend>Skills:</legend>
+            <label for="skill">HTML</label>
+            <input type="checkbox" id="skill" name="skill">
+           
+
+            <label for="skill">CSS</label>
+            <input type="checkbox" id="skill" name="skill">
+       
+            <label for="skill">Javascript</label>
+            <input type="checkbox" id="skill" name="skill">
+
+        </fieldset>
+        <label for="education">Highest Education</label>
+        <br>
+        <select name="education" id="education">
+            <option value="A">A</option>
+            <option value="A">A</option>
+            <option value="A">A</option>
+            <option value="A">A</option>
+            <option value="A">A</option>
+        </select>
+
+        <fieldset>
+            <legend>Availability:</legend>
+            <input type="radio" id="avai" name="avai">
+            <label for="avai">Full-time</label>
+
+            <input type="radio" id="avai" name="avai">
+            <label for="avai">Part-time</label>
+            
+        </fieldset>
+        
+
+        <label for="comment">Additional Comment:</label>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        <br>
+
+        <button>submit</button>
+    
+
+        
+    </form>
+    
+</body>
+</html>
